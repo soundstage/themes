@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="spacing">Body Colour:
+        <input type="text" placeholder="Enter colour name" [(ngModel)]="storedSetting.bgColor" />
+    </div>
+    <div class="spacing">Panel Colour:
+        <input type="text" placeholder="Enter colour name" [(ngModel)]="storedSetting.panelColor" />
+    </div>
+    <div class="spacing">Text Colour:
+        <input type="text" placeholder="Enter colour name" [(ngModel)]="storedSetting.textColor" />
+    </div>
+    <button type="button" class="btn btn-outline-primary" (click)="saveSettings()">Save</button>
+    <p *ngIf="displayMessage">Settings Saved!</p>
+</div>
